@@ -15,11 +15,13 @@ function initEntranceAnimation() {
         y: -50,
         opacity: 0,
     }, "-=1.5")
-    .from("h1 span", {
-        y: 100,
+    .from(".line-inner", {
+        y: "100%",
         opacity: 0,
         stagger: 0.2,
-    }, "-=1.2")
+        duration: 1.2,
+        ease: "power3.out",
+    }, "-=1.0")
     .from(".cta-group", {
         x: -50,
         opacity: 0,

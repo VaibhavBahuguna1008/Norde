@@ -199,16 +199,31 @@ main {
 
 .hero-left {
   max-width: 450px;
-  transform: translateY(-2rem); /* Shifted up to avoid bottom overlap */
+  transform: translateY(-2rem);
+  position: relative;
+  z-index: 10;
 }
 
 h1 {
   font-family: var(--font-heading);
-  font-size: 5rem;
-  line-height: 0.9;
+  font-size: clamp(3rem, 7vw, 5rem);
+  line-height: 0.95;
   font-weight: 700;
-  margin-bottom: 3rem;
-  letter-spacing: -0.02em;
+  margin-bottom: 2.5rem;
+  letter-spacing: -0.01em;
+}
+
+.line {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 0.25rem;
+  margin-bottom: -0.25rem;
+  line-height: 1.1;
+}
+
+.line-inner {
+  display: inline-block;
+  vertical-align: top;
 }
 
 .accent {
@@ -216,10 +231,10 @@ h1 {
   font-weight: 500;
   color: var(--accent-color);
   font-style: italic;
+  display: inline-block;
 }
 
 h1 .accent {
-  display: block;
   font-size: 1.1em;
 }
 
