@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nordé | Built for the Harshest Cold</title>
+    <!-- Google Fonts: Inter and Bricolage Grotesque -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+    <!-- Subtle Background Text -->
+    <div class="bg-watermark">nordé</div>
+
+    <div class="container">
+        
+        <!-- Navigation Header -->
+        <nav>
+            <div class="logo">
+                <div class="icon"></div>
+                nordé
+            </div>
+            <div class="menu-toggle" id="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <div class="nav-links" id="main-nav">
+                <a href="#">ABOUT</a>
+                <a href="#" class="active">SHOP <sup style="font-size: 0.6rem; opacity: 0.6;">23</sup></a>
+                <a href="#">SUPPORT</a>
+                <a href="#">CONTACTS</a>
+            </div>
+            <div class="nav-right">
+                <a href="#">ACCOUNT</a>
+                <div class="cart-btn">CART (0)</div>
+            </div>
+        </nav>
+
+        <!-- Mobile Dropdown Menu -->
+        <div class="mobile-dropdown" id="mobile-dropdown">
+            <a href="#">ABOUT</a>
+            <a href="#" class="active">SHOP</a>
+            <a href="#">SUPPORT</a>
+            <a href="#">CONTACTS</a>
+            <hr style="opacity: 0.1; width: 50px; margin: 2rem 0;">
+            <a href="#" style="font-size: 1rem; opacity: 0.5;">ACCOUNT</a>
+        </div>
+
+        <!-- Main Product Content -->
+        <main>
+            
+            <!-- Left Headline Area -->
+            <div class="hero-left">
+                <h1 id="main-heading">
+                    Built for the 
+                    <span class="accent">Harshest Cold.</span>
+                </h1>
+                
+                <div class="cta-group">
+                    <button class="btn-primary">
+                        <span style="font-size: 1.2rem;">☼</span>
+                        Discover now
+                    </button>
+                    <a href="#" class="link-secondary">View all catalog</a>
+                </div>
+
+                <ul class="features-list">
+                    <li class="feature-item">
+                        <span>Unleash your flair</span>
+                        <span>⚡</span>
+                    </li>
+                    <li class="feature-item">
+                        <span>Experience the lifestyle</span>
+                        <span>◌</span>
+                    </li>
+                    <li class="feature-item">
+                        <span>Inspired by passion</span>
+                        <span>♥</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Central Product Placeholder -->
+            <div class="product-image-container">
+                <img src="assets/Jacket1.png" alt="Nordé Arctic Puffer" id="main-jacket">
+            </div>
+
+            <!-- Right Detail Area -->
+            <div class="hero-right">
+                
+                <div class="product-previews">
+                    <div class="preview-thumb active" data-img="assets/Jacket1.png" data-color="#ffde00">
+                        <img src="assets/Jacket1.png" alt="Yellow Puffer">
+                    </div>
+                    <div class="preview-thumb" data-img="assets/Jacket2.png" data-color="#8B4513">
+                        <img src="assets/Jacket2.png" alt="Brown Puffer">
+                    </div>
+                    <div class="preview-thumb" data-img="assets/Jacket3.png" data-color="#FF6B6B">
+                        <img src="assets/Jacket3.png" alt="Red Puffer">
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <div class="sizes">
+                        <p class="sizes-label">All sizes available</p>
+                        <div class="size-options">
+                            <span>S</span>
+                            <span>M</span>
+                            <span class="active">L</span>
+                            <span>XL</span>
+                            <span>XXL</span>
+                        </div>
+                    </div>
+
+                    <p class="product-desc">
+                        Engineered for ultimate comfort in cold climates, the Arctic Cream Puffer combines minimalist design with maximum insulation.
+                    </p>
+                </div>
+
+            </div>
+
+        </main>
+
+        <!-- Footer Area -->
+        <div class="hero-bottom">
+            <div class="scroll-indicator">
+                [ SCROLL TO EXPLORE ]
+            </div>
+
+            <div class="styled-for-life">
+                <span class="year">©2025</span>
+                <h2>/ Styled for <span class="accent">Life.</span></h2>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
